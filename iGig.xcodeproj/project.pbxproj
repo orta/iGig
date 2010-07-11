@@ -3,126 +3,136 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 44;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* MainMenu.xib */; };
-		770B37ED0679A11B001EADE2 /* iGig_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 770B37EC0679A11B001EADE2 /* iGig_DataModel.xcdatamodel */; };
-		77C8280E06725ACE000B614F /* iGig_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* iGig_AppDelegate.m */; };
-		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
-		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		775BDEF1067A8BF0009058FE /* MyDocument.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 775BDEF0067A8BF0009058FE /* MyDocument.xcdatamodel */; };
+		775DFF38067A968500C5B868 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		8D15AC2E0486D014006FF6A4 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */; };
+		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		B55236D511E9EC4600A2C3B7 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55236D411E9EC4600A2C3B7 /* QTKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		2F7446980DB6B7EA00F9684A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* iGig_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGig_Prefix.pch; sourceTree = "<group>"; };
-		770B37EC0679A11B001EADE2 /* iGig_DataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = iGig_DataModel.xcdatamodel; sourceTree = "<group>"; };
-		77C82804067257F0000B614F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		77C8280B06725ACE000B614F /* iGig_AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGig_AppDelegate.h; sourceTree = "<group>"; };
-		77C8280C06725ACE000B614F /* iGig_AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iGig_AppDelegate.m; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* iGig-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = "iGig-Info.plist"; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* iGig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
+		2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyDocument.nib; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* CoreDataDragDrop_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataDragDrop_Prefix.pch; sourceTree = "<group>"; };
+		775BDEF0067A8BF0009058FE /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
+		7788DA0506752A1600599AAD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* iGig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55236D411E9EC4600A2C3B7 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8D11072E0486CEB800E47090 /* Frameworks */ = {
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				775DFF38067A968500C5B868 /* Cocoa.framework in Frameworks */,
+				B55236D511E9EC4600A2C3B7 /* QTKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Classes */ = {
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				77C8280B06725ACE000B614F /* iGig_AppDelegate.h */,
-				77C8280C06725ACE000B614F /* iGig_AppDelegate.m */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
 		};
-		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				77C82804067257F0000B614F /* CoreData.framework */,
-				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
-				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				7788DA0506752A1600599AAD /* CoreData.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		19C28FACFE9D520D11CA2CBB /* Products */ = {
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* iGig.app */,
+				8D15AC370486D014006FF6A4 /* iGig.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* iGig */ = {
+		2A37F4AAFDCFA73011CA2CEA /* CoreDataDragDrop */ = {
 			isa = PBXGroup;
 			children = (
-				7756732906782D8800D1FEB8 /* Models */,
-				080E96DDFE201D6D7F000001 /* Classes */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
-				29B97323FDCFA39411CA2CEA /* Frameworks */,
-				19C28FACFE9D520D11CA2CBB /* Products */,
+				E1B74B1A0667B4A90069E3BA /* Models */,
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+				B55236D411E9EC4600A2C3B7 /* QTKit.framework */,
 			);
-			name = iGig;
+			name = CoreDataDragDrop;
 			sourceTree = "<group>";
 		};
-		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* iGig_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
+				2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */,
+				2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF750370BD2300C91783 /* CoreDataDragDrop_Prefix.pch */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		29B97317FDCFA39411CA2CEA /* Resources */ = {
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107310486CEB800E47090 /* iGig-Info.plist */,
-				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				2F7446970DB6B7EA00F9684A /* MainMenu.xib */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */,
+				8D15AC360486D014006FF6A4 /* Info.plist */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
-				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7756732906782D8800D1FEB8 /* Models */ = {
+		E1B74B1A0667B4A90069E3BA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				770B37EC0679A11B001EADE2 /* iGig_DataModel.xcdatamodel */,
+				775BDEF0067A8BF0009058FE /* MyDocument.xcdatamodel */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -130,13 +140,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* iGig */ = {
+		8D15AC270486D014006FF6A4 /* iGig */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26FC0A840875C7B200E6366F /* Build configuration list for PBXNativeTarget "iGig" */;
+			buildConfigurationList = 26FC0AA50875C8B900E6366F /* Build configuration list for PBXNativeTarget "iGig" */;
 			buildPhases = (
-				8D1107290486CEB800E47090 /* Resources */,
-				8D11072C0486CEB800E47090 /* Sources */,
-				8D11072E0486CEB800E47090 /* Frameworks */,
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,76 +154,93 @@
 			);
 			name = iGig;
 			productInstallPath = "$(HOME)/Applications";
-			productName = iGig;
-			productReference = 8D1107320486CEB800E47090 /* iGig.app */;
+			productName = CoreDataDragDrop;
+			productReference = 8D15AC370486D014006FF6A4 /* iGig.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		29B97313FDCFA39411CA2CEA /* Project object */ = {
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "iGig" */;
-			compatibilityVersion = "Xcode 3.1";
+			buildConfigurationList = 26FC0AA90875C8B900E6366F /* Build configuration list for PBXProject "iGig" */;
+			compatibilityVersion = "Xcode 3.0";
 			hasScannedForEncodings = 1;
-			mainGroup = 29B97314FDCFA39411CA2CEA /* iGig */;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* CoreDataDragDrop */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* iGig */,
+				8D15AC270486D014006FF6A4 /* iGig */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8D1107290486CEB800E47090 /* Resources */ = {
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */,
+				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
+				8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */,
+				8D15AC2E0486D014006FF6A4 /* MyDocument.nib in Resources */,
+				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8D11072C0486CEB800E47090 /* Sources */ = {
+		8D15AC300486D014006FF6A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				77C8280E06725ACE000B614F /* iGig_AppDelegate.m in Sources */,
-				770B37ED0679A11B001EADE2 /* iGig_DataModel.xcdatamodel in Sources */,
+				8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */,
+				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				775BDEF1067A8BF0009058FE /* MyDocument.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C165DFE840E0CC02AAC07 /* English */,
+				089C1660FE840EACC02AAC07 /* English */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		2F7446970DB6B7EA00F9684A /* MainMenu.xib */ = {
+		2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2F7446980DB6B7EA00F9684A /* English */,
+				2A37F4B5FDCFA73011CA2CEA /* English */,
 			);
-			name = MainMenu.xib;
+			name = MyDocument.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+			);
+			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		26FC0A850875C7B200E6366F /* Debug */ = {
+		26FC0AA60875C8B900E6366F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -221,76 +248,78 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = iGig_Prefix.pch;
-				INFOPLIST_FILE = "iGig-Info.plist";
+				GCC_PREFIX_HEADER = iGig.pch;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = iGig;
 				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
 			};
 			name = Debug;
 		};
-		26FC0A860875C7B200E6366F /* Release */ = {
+		26FC0AA70875C8B900E6366F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = iGig_Prefix.pch;
-				INFOPLIST_FILE = "iGig-Info.plist";
+				GCC_PREFIX_HEADER = iGig.pch;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = iGig;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		26FC0A890875C7B200E6366F /* Debug */ = {
+		26FC0AAA0875C8B900E6366F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
-		26FC0A8A0875C7B200E6366F /* Release */ = {
+		26FC0AAB0875C8B900E6366F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ARCHS = (
+					ppc,
+					i386,
+				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26FC0A840875C7B200E6366F /* Build configuration list for PBXNativeTarget "iGig" */ = {
+		26FC0AA50875C8B900E6366F /* Build configuration list for PBXNativeTarget "iGig" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26FC0A850875C7B200E6366F /* Debug */,
-				26FC0A860875C7B200E6366F /* Release */,
+				26FC0AA60875C8B900E6366F /* Debug */,
+				26FC0AA70875C8B900E6366F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "iGig" */ = {
+		26FC0AA90875C8B900E6366F /* Build configuration list for PBXProject "iGig" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26FC0A890875C7B200E6366F /* Debug */,
-				26FC0A8A0875C7B200E6366F /* Release */,
+				26FC0AAA0875C8B900E6366F /* Debug */,
+				26FC0AAB0875C8B900E6366F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 }
