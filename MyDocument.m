@@ -38,7 +38,7 @@ NSString *DemoItemsDropType = @"DemoItemsDropType";
 
 - (IBAction)addNewItem:(id)sender
 {
-	NSManagedObject *newItem = [NSEntityDescription insertNewObjectForEntityForName:@"Item" inManagedObjectContext:[self managedObjectContext]];
+	NSManagedObject *newItem = [NSEntityDescription insertNewObjectForEntityForName:@"Track" inManagedObjectContext:[self managedObjectContext]];
 	
 	[newItem setValue:@"New Item" forKey:@"name"];
 	[newItem setValue:endViewPositionNum forKey:@"viewPosition"];
@@ -72,7 +72,7 @@ NSString *DemoItemsDropType = @"DemoItemsDropType";
 - (NSArray *)itemsUsingFetchPredicate:(NSPredicate *)fetchPredicate
 {
 	NSError *error = nil;
-	NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"Item" inManagedObjectContext:[self managedObjectContext]];
+	NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"Track" inManagedObjectContext:[self managedObjectContext]];
 	
 	NSArray *arrayOfItems;
 	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
