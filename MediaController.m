@@ -11,4 +11,9 @@
 
 @implementation MediaController
 
+- (BOOL)tableView:(NSTableView *)aTableView shouldSelectRow:(int)rowIndex{
+  
+	return YES;
+}
+
 @end

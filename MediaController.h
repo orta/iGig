@@ -11,6 +11,8 @@
 
 @interface MediaController : NSObject {
   IBOutlet QTMovieView * movieView;
+  IBOutlet NSTableView * trackListView;
 }
 
 @end
+ 
