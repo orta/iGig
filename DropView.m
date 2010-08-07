@@ -21,8 +21,6 @@
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
-  [[NSColor grayColor] set];
-  NSRectFill( dirtyRect );
 }
 
 
