@@ -18,7 +18,6 @@
 }
 
 - (void)tableViewSelectionDidChange:(NSNotification *)aNotification{
-  
   NSArray * array = [trackArray selectedObjects];
   NSManagedObject * currentTrack = [array objectAtIndex:0];  
   [self setMovie:[currentTrack valueForKey:@"fileLocation"]];
