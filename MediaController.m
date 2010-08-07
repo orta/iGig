@@ -10,21 +10,34 @@
 
 @implementation MediaController
 
+- (void) setMovieURL:(NSString *) url {
+  NSArray * array = [trackArray selectedObjects];
+  NSManagedObject * currentTrack = [array objectAtIndex:0];
+  [currentTrack setValue:url forKey:@"fileLocation"];
+  [self setMovie:url];
+}
+
 - (BOOL)tableView:(NSTableView *)aTableView shouldSelectRow:(int)rowIndex{
   NSLog(@"changed row?");
 
   NSArray * array = [trackArray selectedObjects];
   NSManagedObject * currentTrack = [array objectAtIndex:0];
   
-  QTDataReference *ref = [QTDataReference dataReferenceWithReferenceToFile:[currentTrack valueForKey:@"fileLocation"]];
+  [self setMovie:[currentTrack valueForKey:@"fileLocation"]];
+  
+	return YES;
+}
+
+- (void) setMovie: (NSString *) url {
+  QTDataReference *ref = [QTDataReference dataReferenceWithReferenceToFile:url];
   NSError *movErr = nil;
   QTMovie* movie = [[QTMovie alloc] initWithDataReference:ref error:&movErr];
   
   if(movErr == nil){
     [movieView setMovie:movie];  
   }
-
-	return YES;
+  
+  
 }
 
 @end

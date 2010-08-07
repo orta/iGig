@@ -15,5 +15,7 @@
   IBOutlet NSArrayController * trackArray;
 }
 
+- (void) setMovieURL:(NSString *) url;
+
 @end
  
