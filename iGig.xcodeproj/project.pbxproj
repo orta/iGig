@@ -187,7 +187,6 @@
 			isa = PBXProject;
 			buildConfigurationList = 26FC0AA90875C8B900E6366F /* Build configuration list for PBXProject "iGig" */;
 			compatibilityVersion = "Xcode 3.0";
-			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
