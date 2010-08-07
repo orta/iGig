@@ -17,18 +17,18 @@
   [self setMovie:url];
 }
 
-- (BOOL)tableView:(NSTableView *)aTableView shouldSelectRow:(int)rowIndex{
-  NSLog(@"changed row?");
-
+- (void)tableViewSelectionDidChange:(NSNotification *)aNotification{
+  
   NSArray * array = [trackArray selectedObjects];
-  NSManagedObject * currentTrack = [array objectAtIndex:0];
-  
+  NSManagedObject * currentTrack = [array objectAtIndex:0];  
   [self setMovie:[currentTrack valueForKey:@"fileLocation"]];
-  
-	return YES;
 }
 
 - (void) setMovie: (NSString *) url {
+  if(url == nil){
+    [movieView setMovie:nil];
+    return;
+  }
   QTDataReference *ref = [QTDataReference dataReferenceWithReferenceToFile:url];
   NSError *movErr = nil;
   QTMovie* movie = [[QTMovie alloc] initWithDataReference:ref error:&movErr];
@@ -36,8 +36,6 @@
   if(movErr == nil){
     [movieView setMovie:movie];  
   }
-  
-  
 }
 
 @end

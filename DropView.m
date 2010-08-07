@@ -21,14 +21,14 @@
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
-    // Drawing code here.
+  [[NSColor grayColor] set];
+  NSRectFill( dirtyRect );
 }
 
 
 - (NSDragOperation)draggingEntered:(id )sender {
-  NSLog(@"whah");
   
-  return NSDragOperationGeneric;  
+  return NSDragOperationCopy;
 }
 
 - (BOOL)prepareForDragOperation:(id )sender {
