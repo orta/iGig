@@ -293,10 +293,7 @@ NSString *DemoItemsDropType = @"DemoItemsDropType";
 	if (fullscreenWindow) {
 		NSRect newFrame = [fullscreenWindow frameRectForContentRect:
                        [mainWindow contentRectForFrameRect:[mainWindow frame]]];
-		[fullscreenWindow
-     setFrame:newFrame
-     display:YES
-     animate:YES];
+		[fullscreenWindow setFrame:newFrame display:YES animate:YES];
     
 		NSView *contentView = [[[fullscreenWindow contentView] retain] autorelease];
 		[fullscreenWindow setContentView:[[[NSView alloc] init] autorelease]];
