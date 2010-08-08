@@ -599,28 +599,10 @@
 							<string key="NSTitle">View</string>
 							<object class="NSMutableArray" key="NSMenuItems">
 								<bool key="EncodedWithXMLCoder">YES</bool>
-								<object class="NSMenuItem" id="470445292">
-									<reference key="NSMenu" ref="23739880"/>
-									<string key="NSTitle">Show Toolbar</string>
-									<string key="NSKeyEquiv">t</string>
-									<int key="NSKeyEquivModMask">1572864</int>
-									<int key="NSMnemonicLoc">2147483647</int>
-									<reference key="NSOnImage" ref="692303195"/>
-									<reference key="NSMixedImage" ref="109267353"/>
-								</object>
 								<object class="NSMenuItem" id="1035004081">
 									<reference key="NSMenu" ref="23739880"/>
 									<string key="NSTitle">Full Screen</string>
 									<string key="NSKeyEquiv">F</string>
-									<int key="NSKeyEquivModMask">1048576</int>
-									<int key="NSMnemonicLoc">2147483647</int>
-									<reference key="NSOnImage" ref="692303195"/>
-									<reference key="NSMixedImage" ref="109267353"/>
-								</object>
-								<object class="NSMenuItem" id="359876670">
-									<reference key="NSMenu" ref="23739880"/>
-									<string key="NSTitle">Customize Toolbar…</string>
-									<string key="NSKeyEquiv"/>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="692303195"/>
@@ -960,22 +942,6 @@
 						<reference key="destination" ref="338091565"/>
 					</object>
 					<int key="connectionID">250</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">runToolbarCustomizationPalette:</string>
-						<reference key="source" ref="25530276"/>
-						<reference key="destination" ref="359876670"/>
-					</object>
-					<int key="connectionID">336</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">toggleToolbarShown:</string>
-						<reference key="source" ref="25530276"/>
-						<reference key="destination" ref="470445292"/>
-					</object>
-					<int key="connectionID">337</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
@@ -1527,21 +1493,9 @@
 						<reference key="object" ref="23739880"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="470445292"/>
-							<reference ref="359876670"/>
 							<reference ref="1035004081"/>
 						</object>
 						<reference key="parent" ref="554149074"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">334</int>
-						<reference key="object" ref="470445292"/>
-						<reference key="parent" ref="23739880"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">335</int>
-						<reference key="object" ref="359876670"/>
-						<reference key="parent" ref="23739880"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">-3</int>
@@ -1691,10 +1645,6 @@
 					<string>331.IBEditorWindowLastContentRect</string>
 					<string>331.IBPluginDependency</string>
 					<string>331.ImportedFromIB2</string>
-					<string>334.IBPluginDependency</string>
-					<string>334.ImportedFromIB2</string>
-					<string>335.IBPluginDependency</string>
-					<string>335.ImportedFromIB2</string>
 					<string>340.IBPluginDependency</string>
 					<string>340.ImportedFromIB2</string>
 					<string>345.IBPluginDependency</string>
@@ -1851,10 +1801,6 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>{{211, 660}, {231, 43}}</string>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<boolean value="YES"/>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>

@@ -16,6 +16,9 @@
   IBOutlet NSTextField *lengthLabel;
 }
 
+-(IBAction) nextSong:(id) sender;
+-(IBAction) previousSong:(id) sender;
+
 - (void) playpause;
 - (void) tableViewSelectionDidChange:(NSNotification *)aNotification;
 - (void) setMovieURL:(NSString *) url;

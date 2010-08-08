@@ -92,10 +92,10 @@
 	
 	switch(buttonIdentifier) {
 		case kRemoteButtonPlus:
-			buttonName = @"Volume up";			
+      [self nextSong:self];
 			break;
 		case kRemoteButtonMinus:
-			buttonName = @"Volume down";
+      [self previousSong:self];
 			break;			
 		case kRemoteButtonMenu:
 			buttonName = @"Menu";
@@ -122,5 +122,12 @@
 	NSLog(@"%@", feedbackString);
 }
 
+-(IBAction) nextSong:(id) sender {
+  [trackArray setSelectionIndex:[trackArray selectionIndex] - 1 ];
+}
+
+-(IBAction) previousSong:(id) sender {
+  [trackArray setSelectionIndex:[trackArray selectionIndex] + 1 ];
+}
 
 @end
