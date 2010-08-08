@@ -21,6 +21,10 @@ NSString *DemoItemsDropType = @"DemoItemsDropType";
     return self;
 }
 
+- (void) addTrack:(id)sender{
+  [self addNewItem:self];
+}
+
 - (NSString *)windowNibName 
 {
     return @"MyDocument";
