@@ -72,7 +72,10 @@
   }
   float minTotalDuration = totalDuration/60;
   int roundDuration = (int)(minTotalDuration + 0.5f);
-  [lengthLabel setStringValue:[NSString stringWithFormat:@"Duration %i minutes", roundDuration]]; 
+  if(roundDuration > 0){
+    [lengthLabel setStringValue:[NSString stringWithFormat:@"Duration %i minutes", roundDuration]];     
+  }
+
 }
 
 @end
