@@ -8,8 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		6036F334120D581900307F01 /* DropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6036F333120D581900307F01 /* DropView.m */; };
+		60C015E4120F115A00C961BB /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C015E3120F115A00C961BB /* Carbon.framework */; };
+		60C015E6120F115A00C961BB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C015E5120F115A00C961BB /* IOKit.framework */; };
 		60C8AD0D120EA605009A7E31 /* SpacedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8AD0C120EA605009A7E31 /* SpacedWindow.m */; };
 		60C8AD3B120EABE1009A7E31 /* iGig_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 60C8AD3A120EABE1009A7E31 /* iGig_icon.icns */; };
+		60C8ADB6120F0CF4009A7E31 /* IRController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8ADB5120F0CF4009A7E31 /* IRController.m */; };
+		60C8ADC2120F0D7B009A7E31 /* RemoteControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8ADBB120F0D7B009A7E31 /* RemoteControl.m */; };
+		60C8ADC3120F0D7B009A7E31 /* HIDRemoteControlDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8ADBD120F0D7B009A7E31 /* HIDRemoteControlDevice.m */; };
+		60C8ADC4120F0D7B009A7E31 /* AppleRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8ADBF120F0D7B009A7E31 /* AppleRemote.m */; };
+		60C8ADC5120F0D7B009A7E31 /* MultiClickRemoteBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8ADC1120F0D7B009A7E31 /* MultiClickRemoteBehavior.m */; };
 		775BDEF1067A8BF0009058FE /* MyDocument.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 775BDEF0067A8BF0009058FE /* MyDocument.xcdatamodel */; };
 		775DFF38067A968500C5B868 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
@@ -50,9 +57,21 @@
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		6036F332120D581900307F01 /* DropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropView.h; sourceTree = "<group>"; };
 		6036F333120D581900307F01 /* DropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropView.m; sourceTree = "<group>"; };
+		60C015E3120F115A00C961BB /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		60C015E5120F115A00C961BB /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
 		60C8AD0B120EA605009A7E31 /* SpacedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpacedWindow.h; sourceTree = "<group>"; };
 		60C8AD0C120EA605009A7E31 /* SpacedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpacedWindow.m; sourceTree = "<group>"; };
 		60C8AD3A120EABE1009A7E31 /* iGig_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = iGig_icon.icns; sourceTree = "<group>"; };
+		60C8ADB4120F0CF4009A7E31 /* IRController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRController.h; sourceTree = "<group>"; };
+		60C8ADB5120F0CF4009A7E31 /* IRController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRController.m; sourceTree = "<group>"; };
+		60C8ADBA120F0D7B009A7E31 /* RemoteControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteControl.h; sourceTree = "<group>"; };
+		60C8ADBB120F0D7B009A7E31 /* RemoteControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteControl.m; sourceTree = "<group>"; };
+		60C8ADBC120F0D7B009A7E31 /* HIDRemoteControlDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIDRemoteControlDevice.h; sourceTree = "<group>"; };
+		60C8ADBD120F0D7B009A7E31 /* HIDRemoteControlDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIDRemoteControlDevice.m; sourceTree = "<group>"; };
+		60C8ADBE120F0D7B009A7E31 /* AppleRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleRemote.h; sourceTree = "<group>"; };
+		60C8ADBF120F0D7B009A7E31 /* AppleRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleRemote.m; sourceTree = "<group>"; };
+		60C8ADC0120F0D7B009A7E31 /* MultiClickRemoteBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiClickRemoteBehavior.h; sourceTree = "<group>"; };
+		60C8ADC1120F0D7B009A7E31 /* MultiClickRemoteBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiClickRemoteBehavior.m; sourceTree = "<group>"; };
 		775BDEF0067A8BF0009058FE /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
 		7788DA0506752A1600599AAD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +90,8 @@
 				775DFF38067A968500C5B868 /* Cocoa.framework in Frameworks */,
 				B55236D511E9EC4600A2C3B7 /* QTKit.framework in Frameworks */,
 				B552373C11EA043100A2C3B7 /* BWToolkitFramework.framework in Frameworks */,
+				60C015E4120F115A00C961BB /* Carbon.framework in Frameworks */,
+				60C015E6120F115A00C961BB /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +149,8 @@
 				6036F333120D581900307F01 /* DropView.m */,
 				60C8AD0B120EA605009A7E31 /* SpacedWindow.h */,
 				60C8AD0C120EA605009A7E31 /* SpacedWindow.m */,
+				60C8ADB4120F0CF4009A7E31 /* IRController.h */,
+				60C8ADB5120F0CF4009A7E31 /* IRController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -135,6 +158,7 @@
 		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				60C8ADB9120F0D7B009A7E31 /* Remote Control */,
 				2A37F4B0FDCFA73011CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -159,8 +183,25 @@
 				B552373B11EA043100A2C3B7 /* BWToolkitFramework.framework */,
 				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+				60C015E3120F115A00C961BB /* Carbon.framework */,
+				60C015E5120F115A00C961BB /* IOKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60C8ADB9120F0D7B009A7E31 /* Remote Control */ = {
+			isa = PBXGroup;
+			children = (
+				60C8ADBA120F0D7B009A7E31 /* RemoteControl.h */,
+				60C8ADBB120F0D7B009A7E31 /* RemoteControl.m */,
+				60C8ADBC120F0D7B009A7E31 /* HIDRemoteControlDevice.h */,
+				60C8ADBD120F0D7B009A7E31 /* HIDRemoteControlDevice.m */,
+				60C8ADBE120F0D7B009A7E31 /* AppleRemote.h */,
+				60C8ADBF120F0D7B009A7E31 /* AppleRemote.m */,
+				60C8ADC0120F0D7B009A7E31 /* MultiClickRemoteBehavior.h */,
+				60C8ADC1120F0D7B009A7E31 /* MultiClickRemoteBehavior.m */,
+			);
+			name = "Remote Control";
 			sourceTree = "<group>";
 		};
 		E1B74B1A0667B4A90069E3BA /* Models */ = {
@@ -200,6 +241,7 @@
 			isa = PBXProject;
 			buildConfigurationList = 26FC0AA90875C8B900E6366F /* Build configuration list for PBXProject "iGig" */;
 			compatibilityVersion = "Xcode 3.0";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
@@ -240,6 +282,11 @@
 				B552373011EA02E000A2C3B7 /* MediaController.m in Sources */,
 				6036F334120D581900307F01 /* DropView.m in Sources */,
 				60C8AD0D120EA605009A7E31 /* SpacedWindow.m in Sources */,
+				60C8ADB6120F0CF4009A7E31 /* IRController.m in Sources */,
+				60C8ADC2120F0D7B009A7E31 /* RemoteControl.m in Sources */,
+				60C8ADC3120F0D7B009A7E31 /* HIDRemoteControlDevice.m in Sources */,
+				60C8ADC4120F0D7B009A7E31 /* AppleRemote.m in Sources */,
+				60C8ADC5120F0D7B009A7E31 /* MultiClickRemoteBehavior.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +391,8 @@
 					ppc,
 					i386,
 				);
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
