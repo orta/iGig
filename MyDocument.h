@@ -31,6 +31,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "MediaController.h"
+#import "AppleRemote.h"
 
 @interface MyDocument : NSPersistentDocument <NSTableViewDataSource>{
 	
@@ -38,7 +39,9 @@
 	NSArray *_sortDescriptors;
 	IBOutlet NSTableView *itemsTableView;
   IBOutlet MediaController * mediaController;
-	
+  AppleRemote* remoteControl;
+  BOOL applicationHasStarted;
+
 }
 
 - (IBAction)addNewItem:(id)sender;
@@ -55,5 +58,7 @@
 - (void)renumberViewPositions;
 
 - (NSArray *)copyItems:(NSArray *)itemsToCopyArray;
+
+
 
 @end

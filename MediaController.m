@@ -7,6 +7,7 @@
   //
 
 #import "MediaController.h"
+#import "RemoteControl.h"
 
 @implementation MediaController
 
@@ -15,10 +16,12 @@
 }
 
 - (void) playpause {
+  NSLog(@"pp");
   if(! [self isPlaying]){
     [movieView play:self];
   } else{
     [movieView pause:self]; 
+    NSLog(@"pause %@", [movieView movie]);
   }
 }
 
@@ -77,5 +80,47 @@
   }
 
 }
+
+
+// delegate method for the MultiClickRemoteBehavior
+- (void) sendRemoteButtonEvent: (RemoteControlEventIdentifier) buttonIdentifier pressedDown: (BOOL) pressedDown  remoteControl: (RemoteControl*)remote{
+  
+	NSString* buttonName=nil;
+	NSString* pressed=@"";
+	if(pressedDown) return;
+	if (pressedDown) pressed = @"(pressed)"; else pressed = @"(released)";
+	
+	switch(buttonIdentifier) {
+		case kRemoteButtonPlus:
+			buttonName = @"Volume up";			
+			break;
+		case kRemoteButtonMinus:
+			buttonName = @"Volume down";
+			break;			
+		case kRemoteButtonMenu:
+			buttonName = @"Menu";
+			break;			
+		case kRemoteButtonPlay:
+      buttonName = @"Play";
+			[self playpause];
+			break;			
+		case kRemoteButtonRight:	
+			buttonName = @"Right";
+			break;			
+		case kRemoteButtonLeft:
+			buttonName = @"Left";
+			break;			
+		default:
+			NSLog(@"Unmapped event for button %d", buttonIdentifier); 
+			break;
+	}
+  
+	NSString* clickCountString = @"";
+	NSString* feedbackString = [NSString stringWithFormat:@"%@ %@ %@", buttonName, pressed, clickCountString];
+	
+	// print out events
+	NSLog(@"%@", feedbackString);
+}
+
 
 @end

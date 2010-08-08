@@ -16,7 +16,7 @@ NSString *DemoItemsDropType = @"DemoItemsDropType";
 {
     self = [super init];
     if (self != nil) {
-        // initialization code
+      remoteControl = [[[AppleRemote alloc] initWithDelegate: mediaController] autorelease];
     }
     return self;
 }
@@ -275,6 +275,18 @@ NSString *DemoItemsDropType = @"DemoItemsDropType";
 	}
 	
 	return arrayOfCopiedItems;
+}
+
+- (void) dealloc{
+  [remoteControl stopListening: self];
+  [super dealloc];
+}
+- (void)applicationWillBecomeActive:(NSNotification *)aNotification {
+  [remoteControl setDelegate:mediaController];
+	[remoteControl startListening: self];
+}
+- (void)applicationWillResignActive:(NSNotification *)aNotification {
+	[remoteControl stopListening: self];
 }
 
 @end
