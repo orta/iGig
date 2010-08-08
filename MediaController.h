@@ -14,9 +14,11 @@
   IBOutlet NSTableView * trackListView;
   IBOutlet NSArrayController * trackArray;
 }
-- (void)tableViewSelectionDidChange:(NSNotification *)aNotification;
+
+- (void) playpause;
+- (void) tableViewSelectionDidChange:(NSNotification *)aNotification;
 - (void) setMovieURL:(NSString *) url;
 - (void) setMovie: (NSString *) url;
-
+- (BOOL) isPlaying;
 @end
  
