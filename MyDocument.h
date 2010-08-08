@@ -30,12 +30,14 @@
 //  OTHER DEALINGS IN THE SOFTWARE.
 
 #import <Cocoa/Cocoa.h>
+#import "MediaController.h"
 
 @interface MyDocument : NSPersistentDocument <NSTableViewDataSource>{
 	
 	IBOutlet NSArrayController *itemsArrayController;
 	NSArray *_sortDescriptors;
 	IBOutlet NSTableView *itemsTableView;
+  IBOutlet MediaController * mediaController;
 	
 }
 

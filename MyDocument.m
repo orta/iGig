@@ -44,6 +44,7 @@ NSString *DemoItemsDropType = @"DemoItemsDropType";
 	[newItem setValue:endViewPositionNum forKey:@"viewPosition"];
 	
 	[self renumberViewPositions];
+  [mediaController updateSetListTime];
 }
 
 - (IBAction)removeSelectedItems:(id)sender
@@ -58,6 +59,7 @@ NSString *DemoItemsDropType = @"DemoItemsDropType";
 	}
 	
 	[self renumberViewPositions];
+  [mediaController updateSetListTime];
 }
 
 - (NSArray *)sortDescriptors

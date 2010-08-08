@@ -10,6 +10,10 @@
 
 @implementation MediaController
 
+- (void) awakeFromNib{
+  [self performSelector:@selector(updateSetListTime) withObject:self afterDelay:1];
+}
+
 - (void) playpause {
   if(! [self isPlaying]){
     [movieView play:self];
@@ -23,6 +27,7 @@
   NSManagedObject * currentTrack = [array objectAtIndex:0];
   [currentTrack setValue:url forKey:@"fileLocation"];
   [self setMovie:url];
+  [self updateSetListTime];
   
 }
 
@@ -50,6 +55,24 @@
 
 - (BOOL)isPlaying {
   return ([movieView movie] != nil) && ([[movieView movie] rate] != 0);
+}
+
+-(void) updateSetListTime {
+  float totalDuration = 0;
+  
+  NSUInteger i, count = [[trackArray arrangedObjects] count];
+  for (i = 0; i < count; i++) {
+    NSManagedObject * obj = [[trackArray arrangedObjects] objectAtIndex:i];
+    if([obj valueForKey:@"fileLocation"]){
+      QTDataReference *ref = [QTDataReference dataReferenceWithReferenceToFile:[obj valueForKey:@"fileLocation"]];
+      NSError *movErr = nil;
+      QTMovie* movie = [[QTMovie alloc] initWithDataReference:ref error:&movErr];
+      totalDuration += [movie duration].timeValue / [movie duration].timeScale;  
+    }
+  }
+  float minTotalDuration = totalDuration/60;
+  int roundDuration = (int)(minTotalDuration + 0.5f);
+  [lengthLabel setStringValue:[NSString stringWithFormat:@"Duration %i minutes", roundDuration]]; 
 }
 
 @end

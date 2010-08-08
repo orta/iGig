@@ -13,6 +13,7 @@
   IBOutlet QTMovieView * movieView;
   IBOutlet NSTableView * trackListView;
   IBOutlet NSArrayController * trackArray;
+  IBOutlet NSTextField *lengthLabel;
 }
 
 - (void) playpause;
@@ -20,5 +21,7 @@
 - (void) setMovieURL:(NSString *) url;
 - (void) setMovie: (NSString *) url;
 - (BOOL) isPlaying;
+-(void) updateSetListTime;
+
 @end
  
