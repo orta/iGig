@@ -32,6 +32,7 @@
 #import <Cocoa/Cocoa.h>
 #import "MediaController.h"
 #import "AppleRemote.h"
+#import "SpacedWindow.h"
 
 @interface MyDocument : NSPersistentDocument <NSTableViewDataSource>{
 	
@@ -41,11 +42,16 @@
   IBOutlet MediaController * mediaController;
   AppleRemote* remoteControl;
   BOOL applicationHasStarted;
+  
+  IBOutlet NSWindow *mainWindow;
+	NSWindow *fullscreenWindow;
+
 
 }
 
 - (IBAction)addNewItem:(id)sender;
 - (IBAction)removeSelectedItems:(id)sender;
+- (IBAction)toggleFullscreen:(id)sender;
 
 - (NSArray *)sortDescriptors;
 
@@ -58,6 +64,7 @@
 - (void)renumberViewPositions;
 
 - (NSArray *)copyItems:(NSArray *)itemsToCopyArray;
+
 
 
 

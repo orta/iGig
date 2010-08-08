@@ -289,4 +289,59 @@ NSString *DemoItemsDropType = @"DemoItemsDropType";
 	[remoteControl stopListening: self];
 }
 
+- (IBAction)toggleFullscreen:(id)sender {
+	if (fullscreenWindow) {
+		NSRect newFrame = [fullscreenWindow frameRectForContentRect:
+                       [mainWindow contentRectForFrameRect:[mainWindow frame]]];
+		[fullscreenWindow
+     setFrame:newFrame
+     display:YES
+     animate:YES];
+    
+		NSView *contentView = [[[fullscreenWindow contentView] retain] autorelease];
+		[fullscreenWindow setContentView:[[[NSView alloc] init] autorelease]];
+    
+		[mainWindow setContentView:contentView];
+		[mainWindow makeKeyAndOrderFront:nil];
+    
+		[fullscreenWindow close];
+		fullscreenWindow = nil;
+    
+		if ([[mainWindow screen] isEqual:[[NSScreen screens] objectAtIndex:0]]) {
+			[NSMenu setMenuBarVisible:YES];
+		}
+	}	else {
+		[mainWindow deminiaturize:nil];
+    
+		if ([[mainWindow screen] isEqual:[[NSScreen screens] objectAtIndex:0]])
+		{
+			[NSMenu setMenuBarVisible:NO];
+		}
+		
+		fullscreenWindow = [[SpacedWindow alloc]
+                        initWithContentRect:[mainWindow contentRectForFrameRect:[mainWindow frame]]
+                        styleMask:NSBorderlessWindowMask
+                        backing:NSBackingStoreBuffered
+                        defer:YES];
+		
+		NSView *contentView = [[[mainWindow contentView] retain] autorelease];
+		[mainWindow setContentView:[[[NSView alloc] init] autorelease]];
+		
+		[fullscreenWindow setLevel:NSFloatingWindowLevel];
+		[fullscreenWindow setContentView:contentView];
+		[fullscreenWindow setTitle:[mainWindow title]];
+		[fullscreenWindow makeKeyAndOrderFront:nil];
+    
+		[fullscreenWindow
+     setFrame:
+     [fullscreenWindow
+      frameRectForContentRect:[[mainWindow screen] frame]]
+     display:YES
+     animate:YES];
+		
+		[mainWindow orderOut:nil];
+	}
+}
+
+
 @end

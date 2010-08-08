@@ -18,6 +18,9 @@
     [mediaController playpause];
 }
 
-
+- (BOOL)canBecomeKeyWindow
+{
+	return YES;
+}
 
 @end

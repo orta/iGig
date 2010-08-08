@@ -537,7 +537,7 @@
 						</object>
 						<object class="BWInsetTextField" id="46796047">
 							<reference key="NSNextResponder" ref="1062129888"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">290</int>
 							<string key="NSFrame">{{-3, 3}, {623, 14}}</string>
 							<reference key="NSSuperview" ref="1062129888"/>
 							<bool key="NSEnabled">YES</bool>
@@ -769,6 +769,14 @@
 						<reference key="destination" ref="408660127"/>
 					</object>
 					<int key="connectionID">156</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">mainWindow</string>
+						<reference key="source" ref="408660127"/>
+						<reference key="destination" ref="913211984"/>
+					</object>
+					<int key="connectionID">157</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1107,7 +1115,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">156</int>
+			<int key="maxID">157</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1194,9 +1202,11 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>addNewItem:</string>
 							<string>removeSelectedItems:</string>
+							<string>toggleFullscreen:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -1207,6 +1217,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>addNewItem:</string>
 							<string>removeSelectedItems:</string>
+							<string>toggleFullscreen:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1218,6 +1229,10 @@
 								<string key="name">removeSelectedItems:</string>
 								<string key="candidateClassName">id</string>
 							</object>
+							<object class="IBActionInfo">
+								<string key="name">toggleFullscreen:</string>
+								<string key="candidateClassName">id</string>
+							</object>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
@@ -1226,12 +1241,14 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>itemsArrayController</string>
 							<string>itemsTableView</string>
+							<string>mainWindow</string>
 							<string>mediaController</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSArrayController</string>
 							<string>NSTableView</string>
+							<string>NSWindow</string>
 							<string>MediaController</string>
 						</object>
 					</object>
@@ -1241,6 +1258,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>itemsArrayController</string>
 							<string>itemsTableView</string>
+							<string>mainWindow</string>
 							<string>mediaController</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -1252,6 +1270,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">itemsTableView</string>
 								<string key="candidateClassName">NSTableView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">mainWindow</string>
+								<string key="candidateClassName">NSWindow</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">mediaController</string>
