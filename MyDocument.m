@@ -310,7 +310,7 @@ NSString *DemoItemsDropType = @"DemoItemsDropType";
     [textView setFont:[NSFont systemFontOfSize:[NSFont systemFontSize]]];
     
     }	else {
-      [textView setFont:[NSFont systemFontOfSize:60.0f]];
+      [textView setFont:[NSFont systemFontOfSize:30.0f]];
 
       [mainWindow deminiaturize:nil];
     

@@ -21,7 +21,6 @@
     [movieView play:self];
   } else{
     [movieView pause:self]; 
-    NSLog(@"pause %@", [movieView movie]);
   }
 }
 
