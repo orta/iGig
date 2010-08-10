@@ -21,6 +21,7 @@
     [movieView play:self];
   } else{
     [movieView pause:self]; 
+    
   }
 }
 

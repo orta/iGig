@@ -290,6 +290,7 @@ NSString *DemoItemsDropType = @"DemoItemsDropType";
 }
 
 - (IBAction)toggleFullscreen:(id)sender {
+  [scrollController toggle];
 	if (fullscreenWindow) {
 		NSRect newFrame = [fullscreenWindow frameRectForContentRect:
                        [mainWindow contentRectForFrameRect:[mainWindow frame]]];

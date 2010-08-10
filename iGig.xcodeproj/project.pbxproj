@@ -11,6 +11,7 @@
 		60C015E4120F115A00C961BB /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C015E3120F115A00C961BB /* Carbon.framework */; };
 		60C015E6120F115A00C961BB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C015E5120F115A00C961BB /* IOKit.framework */; };
 		60C533011211C878009D5B0A /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C533001211C878009D5B0A /* AppController.m */; };
+		60C533251211CDC4009D5B0A /* FullScreenScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C533241211CDC4009D5B0A /* FullScreenScrollController.m */; };
 		60C8AD0D120EA605009A7E31 /* SpacedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8AD0C120EA605009A7E31 /* SpacedWindow.m */; };
 		60C8AD3B120EABE1009A7E31 /* iGig_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 60C8AD3A120EABE1009A7E31 /* iGig_icon.icns */; };
 		60C8ADC2120F0D7B009A7E31 /* RemoteControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8ADBB120F0D7B009A7E31 /* RemoteControl.m */; };
@@ -61,6 +62,8 @@
 		60C015E5120F115A00C961BB /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
 		60C532FF1211C878009D5B0A /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		60C533001211C878009D5B0A /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		60C533231211CDC4009D5B0A /* FullScreenScrollController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullScreenScrollController.h; sourceTree = "<group>"; };
+		60C533241211CDC4009D5B0A /* FullScreenScrollController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullScreenScrollController.m; sourceTree = "<group>"; };
 		60C8AD0B120EA605009A7E31 /* SpacedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpacedWindow.h; sourceTree = "<group>"; };
 		60C8AD0C120EA605009A7E31 /* SpacedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpacedWindow.m; sourceTree = "<group>"; };
 		60C8AD3A120EABE1009A7E31 /* iGig_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = iGig_icon.icns; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 				6036F333120D581900307F01 /* DropView.m */,
 				60C8AD0B120EA605009A7E31 /* SpacedWindow.h */,
 				60C8AD0C120EA605009A7E31 /* SpacedWindow.m */,
+				60C533231211CDC4009D5B0A /* FullScreenScrollController.h */,
+				60C533241211CDC4009D5B0A /* FullScreenScrollController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				60C8ADC4120F0D7B009A7E31 /* AppleRemote.m in Sources */,
 				60C8ADC5120F0D7B009A7E31 /* MultiClickRemoteBehavior.m in Sources */,
 				60C533011211C878009D5B0A /* AppController.m in Sources */,
+				60C533251211CDC4009D5B0A /* FullScreenScrollController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

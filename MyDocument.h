@@ -33,6 +33,7 @@
 #import "MediaController.h"
 #import "AppleRemote.h"
 #import "SpacedWindow.h"
+#import "FullScreenScrollController.h"
 
 @interface MyDocument : NSPersistentDocument <NSTableViewDataSource>{
 	
@@ -47,6 +48,8 @@
   
   IBOutlet NSWindow *mainWindow;
 	NSWindow *fullscreenWindow;
+  
+  IBOutlet FullScreenScrollController * scrollController;
 
 
 }
