@@ -8,6 +8,7 @@
 
 #import "MediaController.h"
 #import "RemoteControl.h"
+#import "MyDocument.h"
 
 @implementation MediaController
 
@@ -16,7 +17,6 @@
 }
 
 - (void) playpause {
-  NSLog(@"pp");
   if(! [self isPlaying]){
     [movieView play:self];
   } else{
@@ -30,8 +30,7 @@
   NSManagedObject * currentTrack = [array objectAtIndex:0];
   [currentTrack setValue:url forKey:@"fileLocation"];
   [self setMovie:url];
-  [self updateSetListTime];
-  
+  [self updateSetListTime];  
 }
 
 - (void)tableViewSelectionDidChange:(NSNotification *)aNotification{
@@ -99,6 +98,7 @@
 			break;			
 		case kRemoteButtonMenu:
 			buttonName = @"Menu";
+      [document toggleFullscreen:self];
 			break;			
 		case kRemoteButtonPlay:
       buttonName = @"Play";

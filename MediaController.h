@@ -8,12 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 #import "QTKit/QTKit.h"
+@class MyDocument;
 
 @interface MediaController : NSObject {
   IBOutlet QTMovieView * movieView;
   IBOutlet NSTableView * trackListView;
   IBOutlet NSArrayController * trackArray;
   IBOutlet NSTextField *lengthLabel;
+  IBOutlet MyDocument * document;
 }
 
 -(IBAction) nextSong:(id) sender;
@@ -24,7 +26,7 @@
 - (void) setMovieURL:(NSString *) url;
 - (void) setMovie: (NSString *) url;
 - (BOOL) isPlaying;
--(void) updateSetListTime;
+- (void) updateSetListTime;
 
 @end
  
