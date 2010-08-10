@@ -12,7 +12,6 @@
 @implementation AppController
 
 - (BOOL)applicationShouldOpenUntitledFile:(NSApplication *)sender {
-  NSLog(@"app should open");
   if (!applicationHasStarted) {
     // Get the recent documents
     applicationHasStarted = true;

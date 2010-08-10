@@ -351,7 +351,7 @@
 																	<string>public.url</string>
 																</object>
 															</object>
-															<string key="NSFrame">{{0, 283}, {451, 14}}</string>
+															<string key="NSFrameSize">{451, 14}</string>
 															<reference key="NSSuperview" ref="563899514"/>
 															<reference key="NSNextKeyView" ref="777586267"/>
 															<object class="NSTextContainer" key="NSTextContainer" id="1052765923">
@@ -786,6 +786,14 @@
 					</object>
 					<int key="connectionID">158</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">textView</string>
+						<reference key="source" ref="408660127"/>
+						<reference key="destination" ref="506003341"/>
+					</object>
+					<int key="connectionID">159</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -1123,7 +1131,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">158</int>
+			<int key="maxID">159</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1290,6 +1298,7 @@
 							<string>itemsTableView</string>
 							<string>mainWindow</string>
 							<string>mediaController</string>
+							<string>textView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1297,6 +1306,7 @@
 							<string>NSTableView</string>
 							<string>NSWindow</string>
 							<string>MediaController</string>
+							<string>NSTextView</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -1307,6 +1317,7 @@
 							<string>itemsTableView</string>
 							<string>mainWindow</string>
 							<string>mediaController</string>
+							<string>textView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1325,6 +1336,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">mediaController</string>
 								<string key="candidateClassName">MediaController</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">textView</string>
+								<string key="candidateClassName">NSTextView</string>
 							</object>
 						</object>
 					</object>

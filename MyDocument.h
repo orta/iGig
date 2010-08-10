@@ -43,6 +43,8 @@
   AppleRemote* remoteControl;
   BOOL applicationHasStarted;
   
+  IBOutlet NSTextView *textView;
+  
   IBOutlet NSWindow *mainWindow;
 	NSWindow *fullscreenWindow;
 

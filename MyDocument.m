@@ -307,11 +307,14 @@ NSString *DemoItemsDropType = @"DemoItemsDropType";
 		if ([[mainWindow screen] isEqual:[[NSScreen screens] objectAtIndex:0]]) {
 			[NSMenu setMenuBarVisible:YES];
 		}
-	}	else {
-		[mainWindow deminiaturize:nil];
+    [textView setFont:[NSFont systemFontOfSize:[NSFont systemFontSize]]];
     
-		if ([[mainWindow screen] isEqual:[[NSScreen screens] objectAtIndex:0]])
-		{
+    }	else {
+      [textView setFont:[NSFont systemFontOfSize:60.0f]];
+
+      [mainWindow deminiaturize:nil];
+    
+		if ([[mainWindow screen] isEqual:[[NSScreen screens] objectAtIndex:0]]) {
 			[NSMenu setMenuBarVisible:NO];
 		}
 		
