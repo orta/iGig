@@ -12,7 +12,6 @@
 		60C015E6120F115A00C961BB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C015E5120F115A00C961BB /* IOKit.framework */; };
 		60C8AD0D120EA605009A7E31 /* SpacedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8AD0C120EA605009A7E31 /* SpacedWindow.m */; };
 		60C8AD3B120EABE1009A7E31 /* iGig_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 60C8AD3A120EABE1009A7E31 /* iGig_icon.icns */; };
-		60C8ADB6120F0CF4009A7E31 /* IRController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8ADB5120F0CF4009A7E31 /* IRController.m */; };
 		60C8ADC2120F0D7B009A7E31 /* RemoteControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8ADBB120F0D7B009A7E31 /* RemoteControl.m */; };
 		60C8ADC3120F0D7B009A7E31 /* HIDRemoteControlDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8ADBD120F0D7B009A7E31 /* HIDRemoteControlDevice.m */; };
 		60C8ADC4120F0D7B009A7E31 /* AppleRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8ADBF120F0D7B009A7E31 /* AppleRemote.m */; };
@@ -62,8 +61,6 @@
 		60C8AD0B120EA605009A7E31 /* SpacedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpacedWindow.h; sourceTree = "<group>"; };
 		60C8AD0C120EA605009A7E31 /* SpacedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpacedWindow.m; sourceTree = "<group>"; };
 		60C8AD3A120EABE1009A7E31 /* iGig_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = iGig_icon.icns; sourceTree = "<group>"; };
-		60C8ADB4120F0CF4009A7E31 /* IRController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRController.h; sourceTree = "<group>"; };
-		60C8ADB5120F0CF4009A7E31 /* IRController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRController.m; sourceTree = "<group>"; };
 		60C8ADBA120F0D7B009A7E31 /* RemoteControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteControl.h; sourceTree = "<group>"; };
 		60C8ADBB120F0D7B009A7E31 /* RemoteControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteControl.m; sourceTree = "<group>"; };
 		60C8ADBC120F0D7B009A7E31 /* HIDRemoteControlDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIDRemoteControlDevice.h; sourceTree = "<group>"; };
@@ -149,8 +146,6 @@
 				6036F333120D581900307F01 /* DropView.m */,
 				60C8AD0B120EA605009A7E31 /* SpacedWindow.h */,
 				60C8AD0C120EA605009A7E31 /* SpacedWindow.m */,
-				60C8ADB4120F0CF4009A7E31 /* IRController.h */,
-				60C8ADB5120F0CF4009A7E31 /* IRController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -281,7 +276,6 @@
 				B552373011EA02E000A2C3B7 /* MediaController.m in Sources */,
 				6036F334120D581900307F01 /* DropView.m in Sources */,
 				60C8AD0D120EA605009A7E31 /* SpacedWindow.m in Sources */,
-				60C8ADB6120F0CF4009A7E31 /* IRController.m in Sources */,
 				60C8ADC2120F0D7B009A7E31 /* RemoteControl.m in Sources */,
 				60C8ADC3120F0D7B009A7E31 /* HIDRemoteControlDevice.m in Sources */,
 				60C8ADC4120F0D7B009A7E31 /* AppleRemote.m in Sources */,
