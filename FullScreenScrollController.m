@@ -22,6 +22,16 @@
 
 - (void) tick:(id) sender {
   NSLog(@"ticks");
+  
+  float currentMovieTime = [[movieView movie] currentTime].timeValue /  [[movieView movie] currentTime].timeScale;
+  float maxMovieTime = [[movieView movie] duration].timeValue / [[movieView movie] duration].timeScale;
+
+  float currentPercent = (int)(maxMovieTime / 100) * currentMovieTime;
+  
+  NSLog(@" %f ", [scrollView contentSize].height);
+  
+    //  NSLog(@" %f  - %f  = %f %", currentMovieTime, maxMovieTime, currentPercent);
+
 }
            
 @end
