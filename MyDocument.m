@@ -278,7 +278,6 @@ NSString *DemoItemsDropType = @"DemoItemsDropType";
 }
 
 - (void) dealloc{
-  [remoteControl stopListening: self];
   [super dealloc];
 }
 - (void)applicationWillBecomeActive:(NSNotification *)aNotification {

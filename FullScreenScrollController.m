@@ -29,7 +29,7 @@
   float currentPercent = (int)(maxMovieTime / 100) * currentMovieTime;
   
   NSLog(@" %f ", [scrollView contentSize].height);
-  
+
     //  NSLog(@" %f  - %f  = %f %", currentMovieTime, maxMovieTime, currentPercent);
 
 }
